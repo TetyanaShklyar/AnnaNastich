@@ -24,6 +24,11 @@
                 <li><a href="#pricing">Тарифи</a></li>
                 <li><a href="#contact">Контакти</a></li>
             </ul>
+            <div class="lang-switch" role="group" aria-label="Зміна мови">
+                <a href="/" class="lang-btn is-active" lang="uk">Укр</a>
+                <a href="/ru/" class="lang-btn" lang="ru">Рус</a>
+            </div>
+
             <a href="https://t.me/Annapsihol" class="main-btn" target="_blank">Консультація</a>
         </nav>
         <button class="x-burger" id="x-burger" aria-label="Відкрити меню" aria-expanded="false">
@@ -39,10 +44,32 @@
             <button class="x-close" id="x-close" aria-label="Закрити меню">&times;</button>
         </div>
         <nav class="x-offcanvas__nav">
-            <a href="#about" data-x-close>Про мене</a>
-            <a href="#services" data-x-close>Послуги</a>
-            <a href="#pricing" data-x-close>Тарифи</a>
-            <a href="#contact" data-x-close>Контакти</a>
+            <a href="#about" data-x-close>
+                <span class="nav-ico"><i class="fa-solid fa-user" aria-hidden="true"></i></span>
+                <span>Про мене</span>
+            </a>
+
+            <a href="#services" data-x-close>
+                <span class="nav-ico"><i class="fa-solid fa-clipboard-list" aria-hidden="true"></i></span>
+                <span>Послуги</span>
+            </a>
+
+            <a href="#pricing" data-x-close>
+                <span class="nav-ico"><i class="fa-solid fa-tags" aria-hidden="true"></i></span>
+                <span>Тарифи</span>
+            </a>
+
+            <a href="#contact" data-x-close>
+                <span class="nav-ico"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+                <span>Контакти</span>
+            </a>
+
+
+            <div class="lang-switch" role="group" aria-label="Зміна мови">
+                <a href="/" class="lang-btn is-active" lang="uk">Укр</a>
+                <a href="/ru/" class="lang-btn" lang="ru">Рус</a>
+            </div>
+
         </nav>
         <div class="x-offcanvas__cta">
             <a href="https://t.me/Annapsihol" class="main-btn" target="_blank" data-x-close>Записатись</a>
@@ -178,6 +205,57 @@
 
         </div>
     </section>
+
+    <section id="why" class="why-section reveal">
+
+        <div class=" why-inner">
+            <div class="why-content">
+                <h2 id="why-title">Вам не потрібен психолог якщо:</h2>
+
+                <ol class="why-list">
+                    <li class="why-point">
+                        <span class="why-num">1</span>
+                        <span class="why-text">Ви відчуваєте впевненість, а іноді сумніви у правильності своїх
+                            рішень.</span>
+                    </li>
+                    <li class="why-point">
+                        <span class="why-num">2</span>
+                        <span class="why-text">Ви відчуваєте свій шлях, як свій.</span>
+                    </li>
+                    <li class="why-point">
+                        <span class="why-num">3</span>
+                        <span class="why-text">Вам комфортно із своїми почуттями.</span>
+                    </li>
+                    <li class="why-point">
+                        <span class="why-num">4</span>
+                        <span class="why-text">Ви самостійно вирішуєте проблеми та долаєте труднощі.</span>
+                    </li>
+                    <li class="why-point">
+                        <span class="why-num">5</span>
+                        <span class="why-text">Ви більше часу відчуваєте: радість, вдячність, спокій.</span>
+                    </li>
+                    <li class="why-point">
+                        <span class="why-num">6</span>
+                        <span class="why-text">Злість, сум, страхи періодично проживаєте, але швидко виходите на силу та
+                            рівновагу.</span>
+                    </li>
+                </ol>
+
+                <p class="why-conclusion">
+                    Тоді психолог потрібен лише, якщо ви хочете <b>глибше зрозуміти себе</b>,
+                    <b>сенс життя</b> та <b>розвитку</b>
+                    <span class="why-emoji">😂🤩💖🌈</span>
+                </p>
+            </div>
+
+            <aside class="why-side">
+                <figure class="why-portrait">
+                    <img src="images/owner.jpeg" alt="Анна Юріївна Настич — сімейний психолог" loading="lazy">
+                </figure>
+            </aside>
+        </div>
+    </section>
+
 
     <section id="pricing" class="reveal">
         <div class="pricing-inner">
@@ -346,12 +424,12 @@
             if (close) { close.addEventListener('click', closeMenu); }
             if (overlay) { overlay.addEventListener('click', closeMenu); }
 
-            // Закриття по кліку на пункт меню
+
             document.querySelectorAll('[data-x-close]').forEach(a => {
                 a.addEventListener('click', closeMenu);
             });
 
-            // ESC
+
             window.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape' && panel.classList.contains('is-open')) closeMenu();
             });
