@@ -19,7 +19,7 @@
         </div>
         <nav>
             <ul id="nav-links">
-                <li><a href="#about">Про мене</a></li>
+                <li><a href="#about-me">Про мене</a></li>
                 <li><a href="#services">Послуги</a></li>
                 <li><a href="#pricing">Тарифи</a></li>
                 <li><a href="#contact">Контакти</a></li>
@@ -44,7 +44,7 @@
             <button class="x-close" id="x-close" aria-label="Закрити меню">&times;</button>
         </div>
         <nav class="x-offcanvas__nav">
-            <a href="#about" data-x-close>
+            <a href="#about-me" data-x-close>
                 <span class="nav-ico"><i class="fa-solid fa-user" aria-hidden="true"></i></span>
                 <span>Про мене</span>
             </a>
@@ -108,21 +108,58 @@
             <div class="about-text">
                 <div>
 
-                    <h1 class="word-rainbow">Сімейний психолог <span>Настич Анна Юріївна</span></h1>
+                    <h1 class="word-rainbow">Сімейна психологиня <span>Настич Анна Юріївна</span></h1>
 
                     <img src="images/bacl-logo.png" class="line" alt="фон">
                     <p>Створюю <span class="word-rainbow">безпечний простір</span>, де ви: долаєте
-                        тривоги,проблеми,зцілюєте біль,повертаєте свій ресурсний стан та <span
+                        тривоги, проблеми, зцілюєте біль, повертаєте свій ресурсний стан та <span
                             class="word-rainbow">веселкові кольори життя.</span>
                     </p>
 
                 </div>
-                <a href="https://t.me/Annapsihol" class="main-btn" target="_blank">Записатись</a>
+                <div class="hero-actions">
+                    <a href="https://t.me/Annapsihol" class="main-btn" target="_blank">Записатись</a>
+                    <button type="button" class="main-btn btn-outline" data-modal-open="#memo-modal">
+                        Пам’ятка</button>
+                </div>
             </div>
 
 
         </div>
     </section>
+    <section id="about-me" class="bio-hero">
+        <div class="bio-hero-inner">
+            <h2 id="why-title">Про мене</h2>
+            <p class="pricing-intro">Мені 70 років. Понад 40 років практики. Пенсіонерка, яка продовжує
+                консультувати, бо
+                люблю людей, їхній розвиток і досягнення. Кожен клієнт для мене окремий Всесвіт, а їхні
+                щасливі життя мене
+                надихають.
+                У вільний час малюю, танцюю, співаю, вирощую рослини та плекаю свій сад і город.</p>
+            <div class="bio-diplomas">
+                <img src="images/diploma1.jpg" alt="Диплом 1">
+                <img src="images/diploma2.jpg" alt="Диплом 1">
+                <img src="images/diploma3.jpg" alt="Диплом 1">
+            </div>
+            <ul class="values-row">
+                <li><span class="val-ico"><i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i></span>Повага
+                    до
+                    кордонів і гідності кожної людини</li>
+                <li><span class="val-ico"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></span>Чесність,
+                    етичність та конфіденційність</li>
+                <li><span class="val-ico"><i class="fa-solid fa-seedling" aria-hidden="true"></i></span>Ріст через
+                    усвідомлення й відповідальність</li>
+                <li><span class="val-ico"><i class="fa-solid fa-people-arrows" aria-hidden="true"></i></span>Партнерство
+                    у
+                    терапії та діалог</li>
+                <li><span class="val-ico"><i class="fa-solid fa-face-smile-beam" aria-hidden="true"></i></span>Баланс
+                    тіла,
+                    емоцій і сенсів</li>
+            </ul>
+        </div>
+    </section>
+
+
 
     <section id="services" class="reveal">
         <div class="services-inner">
@@ -130,6 +167,12 @@
                 <h2 class="word-rainbow">З чим я працюю</h2>
                 <img src="images/bacl-logo.png" class="line" alt="фон">
             </div>
+            <p class="pricing-intro">
+                Ви отримаєте: <br>
+                Індивідуальний підхід, компетентну думку фахівця, атмосферу прийняття та довіри, гарантовану
+                конфіденційність, глибоке пропрацювання проблеми
+
+            </p>
 
             <div class="svc-grid">
                 <article class="svc-card">
@@ -142,7 +185,7 @@
                             <li>Розвиток діалогу в стосунках</li>
                             <li>Спільна уява про шлюб</li>
                             <li>Страхи вагітності, материнства/батьківства</li>
-                            <li>Важливість статусу (заміжня / жонатий)</li>
+                            <li>Важливість статусу (заміжня / одружений)</li>
                             <li>Опрацювання різних моделей родини</li>
                         </ul>
                         <a href="https://t.me/Annapsihol" class="main-btn" target="_blank">Записатись</a>
@@ -196,6 +239,11 @@
                             <li>Саморозвиток, розбір родових сценаріїв</li>
                             <li>Системні розстановки (графічні)</li>
                             <li>Розлучення, горе</li>
+                            <li>Конфлікти</li>
+                            <li>Емоційна співзалежність</li>
+                            <li> Кризові періоди в родині</li>
+                            <li> Коли діти дорослі</li>
+                            <li> Труднощі подружжя пенсіонерів</li>
                         </ul>
                         <a href="https://t.me/Annapsihol" class="main-btn" target="_blank">Записатись</a>
                     </div>
@@ -266,6 +314,7 @@
 
 
             <p class="pricing-intro">
+                Ціни актуальні на 2025 рік. <br>
                 Оберіть підходящий формат роботи. Всі консультації проводжу онлайн та офлайн.
             </p>
 
@@ -284,7 +333,7 @@
 
                 <div class="price-card popular">
                     <div>
-                        <h3>Індивідуальна консультація</h3>
+                        <h3>Індивідуальна консультація <span>(пільгова пропозиція)</span></h3>
                         <div class="price word-rainbow">2200 грн</div>
                         <div class="duration">60 хвилин</div>
                         <p>Персональна робота з індивідуальними запитами</p>
@@ -319,7 +368,7 @@
                         <h3>Психологічний супровід</h3>
                         <div class="price word-rainbow">1000 грн</div>
                         <div class="duration">на місяць</div>
-                        <p>Постійна підтримка протягом місяця</p>
+                        <p>Індивідуальна переписка в Вайбер, Телеграм</p>
                     </div>
 
                     <a href="https://t.me/Annapsihol" class="main-btn" target="_blank">Обрати</a>
@@ -350,7 +399,7 @@
                 <article class="price-card rules-card">
                     <div class="rules-media">
 
-                        <img src="images/contacts.jpg" alt="Ілюстрація: сімʼя" loading="lazy">
+                        <img src="images/services5.png" alt="Ілюстрація: сімʼя" loading="lazy">
                     </div>
                     <div class="rules-text">
                         <h3 class="word-rainbow">Як я не працюю</h3>
@@ -390,6 +439,86 @@
             </div>
         </div>
     </section>
+
+    <div class="x-modal" id="memo-modal" aria-hidden="true" role="dialog" aria-modal="true"
+        aria-labelledby="memo-title">
+        <div class="x-modal__overlay" data-modal-close></div>
+
+        <div class="x-modal__dialog" role="document">
+            <button class="x-modal__close" type="button" aria-label="Закрити" data-modal-close>&times;</button>
+
+            <header class="x-modal__head">
+                <img src="images/logo.png" alt="Логотип" class="x-modal__logo">
+                <h3 id="memo-title" class="word-rainbow">ПАМ’ЯТКА: як підготуватися до консультації</h3>
+            </header>
+
+            <div class="x-modal__body">
+                <section class="x-modal__section">
+                    <h4>Перед консультацією</h4>
+                    <ul>
+                        <li>Не приймайте заспокійливі, не вживайте алкоголь, каву та міцний чай у день консультації.
+                        </li>
+                        <li>Підготуйте безпечний простір, де вас ніхто не турбуватиме.</li>
+                        <li>Зарядiть гаджети, перевірте інтернет/зв’язок.</li>
+                        <li>Налаштуйтеся на пізнання нового досвіду та щирий діалог.</li>
+                    </ul>
+                </section>
+
+                <section class="x-modal__section">
+                    <h4>Що варто підготувати</h4>
+                    <ul class="x-two-cols">
+                        <li>Вода для пиття</li>
+                        <li>Серветки</li>
+                        <li>Старі газети</li>
+                        <li>Аркуші А4</li>
+                        <li>Простий м’який олівець</li>
+                        <li>Ластик</li>
+                        <li>Ручка</li>
+                        <li>Набір кольорових фломастерів</li>
+                    </ul>
+                    <p class="x-note">Бажано, щоб туалет був поруч 😊</p>
+                </section>
+
+                <section class="x-modal__section">
+                    <h4>Формати психологічної підтримки</h4>
+                    <ol>
+                        <li><b>«Нахлинуло — ділюся».</b> Вчимося описувати стани, почуття та емоції. Від мене —
+                            запитання
+                            для уточнення.</li>
+                        <li><b>«Щоденник, що відповідає».</b> Ви пишете, я відповідаю роздумами й наводжу фокус на
+                            важливе.
+                        </li>
+                        <li><b>«Дослідження мого життя».</b> Обираємо тему на місяць (роздратування, реакції на образу,
+                            тілесні прояви тощо). Я підбираю вправи та завдання.</li>
+                        <li><b>Швидка допомога.</b> Коли важко впоратись зі стресом/емоціями — домовляємось про 15–20 хв
+                            онлайн-переписки для стабілізації стану.</li>
+                        <li><b>«Буксир».</b> На місяць я м’яко ініціюю й підштовхую до корисної активності.</li>
+                    </ol>
+                    <p class="x-note">Ви обираєте комфортний формат на місяць, а я рухаюся за вашим запитом.</p>
+                </section>
+
+                <section class="x-modal__section">
+                    <h4>Якщо хочеться «втекти» з терапії</h4>
+                    <ul>
+                        <li>Не зупиняємося на поверхні — досліджуємо: <i>хто</i> тікає всередині мене, <i>від кого</i> і
+                            <i>чому саме зараз</i>.
+                        </li>
+                        <li>Робимо сам факт бажання піти матеріалом терапії — це ключ до глибшого конфлікту, а не
+                            «помилка».
+                        </li>
+                        <li>Розрізняємо «я хочу піти» і «я хочу змін». Часто потрібна зміна темпу/формату, а не розрив
+                            стосунку з терапією.</li>
+                    </ul>
+                </section>
+            </div>
+
+            <footer class="x-modal__footer">
+                <a href="https://t.me/Annapsihol" class="main-btn" target="_blank" rel="noopener">Записатись</a>
+                <button class="main-btn btn-outline" type="button" data-modal-close>Зрозуміло</button>
+            </footer>
+        </div>
+    </div>
+
 
 
 
@@ -434,6 +563,62 @@
                 if (e.key === 'Escape' && panel.classList.contains('is-open')) closeMenu();
             });
         })();
+
+        (function () {
+            const body = document.body;
+            let activeModal = null, lastFocus = null;
+
+            const qsa = (root, sel) => Array.from(root.querySelectorAll(sel));
+            const focusablesSel = 'a[href],button:not([disabled]),[tabindex]:not([tabindex="-1"]),textarea,input,select';
+
+            function openModal(sel) {
+                const modal = typeof sel === 'string' ? document.querySelector(sel) : sel;
+                if (!modal) return;
+                lastFocus = document.activeElement;
+                activeModal = modal;
+                modal.classList.add('is-open');
+                modal.setAttribute('aria-hidden', 'false');
+                body.classList.add('x-modal-open');
+
+                const f = qsa(modal, focusablesSel);
+                if (f.length) f[0].focus();
+
+                document.addEventListener('keydown', onKeydown);
+            }
+
+            function closeModal() {
+                if (!activeModal) return;
+                activeModal.classList.remove('is-open');
+                activeModal.setAttribute('aria-hidden', 'true');
+                body.classList.remove('x-modal-open');
+                document.removeEventListener('keydown', onKeydown);
+                if (lastFocus) lastFocus.focus();
+                activeModal = null;
+            }
+
+            function onKeydown(e) {
+                if (!activeModal) return;
+                if (e.key === 'Escape') return closeModal();
+                if (e.key === 'Tab') {
+                    const f = qsa(activeModal, focusablesSel);
+                    if (!f.length) return;
+                    const first = f[0], last = f[f.length - 1];
+                    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+                    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+                }
+            }
+
+            document.querySelectorAll('[data-modal-open]').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openModal(btn.getAttribute('data-modal-open'));
+                });
+            });
+            document.querySelectorAll('[data-modal-close]').forEach(el => {
+                el.addEventListener('click', closeModal);
+            });
+        })();
+
     </script>
 
 
