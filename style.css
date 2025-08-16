@@ -1603,6 +1603,7 @@ body.x-modal-open {
   font-weight: 800;
   color: var(--text);
   text-align: center;
+  text-shadow: none;
 }
 .x-modal__body {
   padding: 18px 20px;
@@ -1637,6 +1638,7 @@ body.x-modal-open {
 }
 .x-modal__footer {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   justify-content: flex-end;
   padding: 14px 20px;
