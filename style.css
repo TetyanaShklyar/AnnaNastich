@@ -932,10 +932,15 @@ body.x-menu-open {
   min-height: 2lh;
 }
 
-.price-card h3 span {
+.price-card .price span {
   font-size: 18px;
   display: block;
   text-align: center;
+  background: none;
+  text-shadow: none;
+  color: var(--text);
+  -webkit-text-fill-color: var(--text);
+  font-weight: 500;
 }
 
 .price-card .price {
