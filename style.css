@@ -978,7 +978,7 @@ body.x-menu-open {
 
 @media (max-width: 1120px) {
   #pricing {
-    padding: 15px;
+    padding: 40px 15px 0;
   }
   .pricing-grid {
     display: flex;
@@ -1072,7 +1072,7 @@ body.x-menu-open {
 }
 .rules-media img {
   width: 100%;
-  height: 430px;
+  height: 650px;
   object-fit: cover;
   border-radius: 18px;
   display: block;
@@ -1157,6 +1157,14 @@ body.x-menu-open {
   }
   .price-card .logo img {
     max-width: 265px;
+  }
+  .contact-text {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 98%;
+  }
+  .price-card p {
+    margin: 10px 0;
   }
 }
 
@@ -1566,6 +1574,9 @@ body.x-menu-open {
   .rules-text h3 {
     margin-bottom: 30px;
   }
+  .why-content h2 {
+    margin-bottom: 25px;
+  }
 }
 body.x-modal-open {
   overflow: hidden;
@@ -1704,4 +1715,138 @@ body.x-modal-open {
   border-radius: 12px;
   display: block;
   font-size: 20px;
+}
+
+/* ==== REVIEWS ==== */
+.reviews-section {
+  position: relative;
+  padding: clamp(56px, 8vw, 110px) 18px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.25) 30%,
+      rgba(255, 255, 255, 0.6) 70%,
+      #fff 100%
+    ),
+    url(images/reviews-bg.png);
+  padding-bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.reviews-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.reviews-intro {
+  max-width: 980px;
+  margin: 14px auto 28px;
+  text-align: center;
+  font-size: clamp(18px, 2.2vw, 24px);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.review-card {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 14px 36px rgba(158, 106, 184, 0.22);
+  isolation: isolate;
+  aspect-ratio: 4 / 5;
+  display: grid;
+  align-content: end;
+}
+.review-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+.review-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.9) 90%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  z-index: 0;
+}
+.review-card:hover img {
+  transform: scale(1.04);
+}
+
+.review-card figcaption {
+  position: relative;
+  z-index: 1;
+  color: var(--text);
+  padding: 16px 16px 18px;
+  font-weight: 500;
+  display: grid;
+  gap: 8px;
+}
+.review-card blockquote {
+  margin: 0;
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 1.5;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+  font-size: 20px;
+}
+.review-card .author {
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.95;
+  text-transform: uppercase;
+}
+.stars {
+  display: inline-flex;
+  gap: 3px;
+  font-size: 16px;
+}
+.stars .fa-star {
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.25));
+  color: #ffd36b; /* мʼякий золотий */
+}
+
+.reviews-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(18px, 3.2vw, 32px);
+}
+.reviews-cta .main-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .reviews-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 680px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .review-card {
+    aspect-ratio: 3 / 4;
+  }
+  .reviews-section {
+    padding-bottom: 0;
+  }
 }
