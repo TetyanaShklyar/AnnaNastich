@@ -1,721 +1,1063 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Анна Юріївна Настич | Сімейний психолог</title>
+    <meta
+      name="description"
+      content="Анна Психологова – сімейний психолог, онлайн-консультації для дорослих. Підтримка, психологічні тренінги, групові зустрічі."
+    />
+
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="Анна Юріївна Настич">
+      <div class="logo">
+        <img src="images/logo.png" alt="Анна Юріївна Настич" />
+      </div>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#about-me">Про мене</a></li>
+          <li><a href="#services">Послуги</a></li>
+          <li><a href="#pricing">Тарифи</a></li>
+          <li><a href="#contact">Контакти</a></li>
+        </ul>
+        <div class="lang-switch" role="group" aria-label="Зміна мови">
+          <a href="index.html" class="lang-btn is-active" lang="uk">Укр</a>
+          <a href="ru.html" class="lang-btn" lang="ru">Рус</a>
         </div>
-        <nav>
-            <ul id="nav-links">
-                <li><a href="#about-me">Про мене</a></li>
-                <li><a href="#services">Послуги</a></li>
-                <li><a href="#pricing">Тарифи</a></li>
-                <li><a href="#contact">Контакти</a></li>
-            </ul>
-            <div class="lang-switch" role="group" aria-label="Зміна мови">
-                <a href="index.html" class="lang-btn is-active" lang="uk">Укр</a>
-                <a href="ru.html" class="lang-btn" lang="ru">Рус</a>
-            </div>
 
-            <a href="https://t.me/Annapsihol" class="main-btn" target="_blank">Консультація</a>
-        </nav>
-        <button class="x-burger" id="x-burger" aria-label="Відкрити меню" aria-expanded="false">
-            <span class="x-burger__lines"></span>
-        </button>
+        <a href="https://t.me/Annapsihol" class="main-btn" target="_blank"
+          >Консультація</a
+        >
+      </nav>
+      <button
+        class="x-burger"
+        id="x-burger"
+        aria-label="Відкрити меню"
+        aria-expanded="false"
+      >
+        <span class="x-burger__lines"></span>
+      </button>
     </header>
 
     <div class="x-overlay" id="x-overlay" aria-hidden="true"></div>
 
     <aside class="x-offcanvas" id="x-offcanvas" aria-hidden="true">
-        <div class="x-offcanvas__head">
-            <img src="images/logo.png" alt="Лого" class="x-offcanvas__logo">
-            <button class="x-close" id="x-close" aria-label="Закрити меню">&times;</button>
+      <div class="x-offcanvas__head">
+        <img src="images/logo.png" alt="Лого" class="x-offcanvas__logo" />
+        <button class="x-close" id="x-close" aria-label="Закрити меню">
+          &times;
+        </button>
+      </div>
+      <nav class="x-offcanvas__nav">
+        <a href="#about-me" data-x-close>
+          <span class="nav-ico"
+            ><i class="fa-solid fa-user" aria-hidden="true"></i
+          ></span>
+          <span>Про мене</span>
+        </a>
+
+        <a href="#services" data-x-close>
+          <span class="nav-ico"
+            ><i class="fa-solid fa-clipboard-list" aria-hidden="true"></i
+          ></span>
+          <span>Послуги</span>
+        </a>
+
+        <a href="#pricing" data-x-close>
+          <span class="nav-ico"
+            ><i class="fa-solid fa-tags" aria-hidden="true"></i
+          ></span>
+          <span>Тарифи</span>
+        </a>
+
+        <a href="#contact" data-x-close>
+          <span class="nav-ico"
+            ><i class="fa-solid fa-envelope" aria-hidden="true"></i
+          ></span>
+          <span>Контакти</span>
+        </a>
+
+        <div class="lang-switch" role="group" aria-label="Зміна мови">
+          <a href="index.html" class="lang-btn is-active" lang="uk">Укр</a>
+          <a href="ru.html" class="lang-btn" lang="ru">Рус</a>
         </div>
-        <nav class="x-offcanvas__nav">
-            <a href="#about-me" data-x-close>
-                <span class="nav-ico"><i class="fa-solid fa-user" aria-hidden="true"></i></span>
-                <span>Про мене</span>
-            </a>
-
-            <a href="#services" data-x-close>
-                <span class="nav-ico"><i class="fa-solid fa-clipboard-list" aria-hidden="true"></i></span>
-                <span>Послуги</span>
-            </a>
-
-            <a href="#pricing" data-x-close>
-                <span class="nav-ico"><i class="fa-solid fa-tags" aria-hidden="true"></i></span>
-                <span>Тарифи</span>
-            </a>
-
-            <a href="#contact" data-x-close>
-                <span class="nav-ico"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
-                <span>Контакти</span>
-            </a>
-
-
-            <div class="lang-switch" role="group" aria-label="Зміна мови">
-                <a href="index.html" class="lang-btn is-active" lang="uk">Укр</a>
-                <a href="ru.html" class="lang-btn" lang="ru">Рус</a>
-            </div>
-
-        </nav>
-        <div class="x-offcanvas__cta">
-            <a href="https://t.me/Annapsihol" class="main-btn" target="_blank" data-x-close>Записатись</a>
-        </div>
+      </nav>
+      <div class="x-offcanvas__cta">
+        <a
+          href="https://t.me/Annapsihol"
+          class="main-btn modal-open-btn"
+          target="_blank"
+          data-x-close
+          >Записатись</a
+        >
+      </div>
     </aside>
 
     <section id="about">
-        <div class="about-container">
-            <div class="about-container-info">
-                <div class="about-image">
-                    <img src="images/ANNA.jpeg" alt="Анна Юріївна Настич">
-                </div>
-                <div class="status">
-                    <div class="stat">
-                        <div class="stat__icon">
-                            <i class="fa-solid fa-award" aria-hidden="true"></i>
-                        </div>
-                        <div class="stat__text">
-                            <b>30+ років</b>
-                            <span> досвіду</span>
-                        </div>
-                    </div>
-
-                    <div class="stat">
-                        <div class="stat__icon">
-                            <i class="fa-solid fa-user-group" aria-hidden="true"></i>
-                        </div>
-                        <div class="stat__text">
-                            <b>2000+</b>
-                            <span>консультацій</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="about-text">
-                <div>
-
-                    <h1 class="word-rainbow">Сімейна психологиня <span>Настич Анна Юріївна</span></h1>
-
-                    <img src="images/bacl-logo.png" class="line" alt="фон">
-                    <p>Створюю <span class="word-rainbow">безпечний простір</span>, де ви: долаєте
-                        тривоги, проблеми, зцілюєте біль, повертаєте свій ресурсний стан та <span
-                            class="word-rainbow">веселкові кольори життя.</span>
-                    </p>
-
-                </div>
-                <div class="hero-actions">
-                    <a href="https://t.me/Annapsihol" class="main-btn" target="_blank">Записатись</a>
-                    <button type="button" class="main-btn btn-outline" data-modal-open="#memo-modal">
-                        Пам’ятка</button>
-                </div>
+      <div class="about-container">
+        <div class="about-container-info">
+          <div class="about-image">
+            <img src="images/ANNA.jpeg" alt="Анна Юріївна Настич" />
+          </div>
+          <div class="status">
+            <div class="stat">
+              <div class="stat__icon">
+                <i class="fa-solid fa-award" aria-hidden="true"></i>
+              </div>
+              <div class="stat__text">
+                <b>30+ років</b>
+                <span> досвіду</span>
+              </div>
             </div>
 
-
+            <div class="stat">
+              <div class="stat__icon">
+                <i class="fa-solid fa-user-group" aria-hidden="true"></i>
+              </div>
+              <div class="stat__text">
+                <b>2000+</b>
+                <span>консультацій</span>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="about-text">
+          <div>
+            <h1 class="word-rainbow">
+              Сімейна психологиня <span>Настич Анна Юріївна</span>
+            </h1>
+
+            <img src="images/bacl-logo.png" class="line" alt="фон" />
+            <p>
+              Створюю <span class="word-rainbow">безпечний простір</span>, де
+              ви: долаєте тривоги, проблеми, зцілюєте біль, повертаєте свій
+              ресурсний стан та
+              <span class="word-rainbow">веселкові кольори життя.</span>
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a
+              href="https://t.me/Annapsihol"
+              class="main-btn modal-open-btn"
+              target="_blank"
+              >Записатись</a
+            >
+            <button
+              type="button"
+              class="main-btn btn-outline"
+              data-modal-open="#memo-modal"
+            >
+              Пам’ятка
+            </button>
+          </div>
+        </div>
+      </div>
+      <section class="promo-section">
+        <div class="container promo-container">
+          <p class="promo-text">
+            <strong>Акція для нових клієнтів:</strong>
+            кожен другий тиждень місяця перша діагностична консультація —
+            <span>безкоштовно!</span>
+          </p>
+        </div>
+      </section>
     </section>
     <section id="about-me" class="bio-hero">
-        <div class="bio-hero-inner">
-            <div class="title">
-                <h2 class="word-rainbow">Про мене</h2>
-                <img src="images/bacl-logo.png" class="line" alt="фон">
-            </div>
-            <p class="pricing-intro">Мені 70 років. Понад 40 років практики. Пенсіонерка, яка продовжує
-                консультувати, бо
-                люблю людей, їхній розвиток і досягнення. Кожен клієнт для мене окремий Всесвіт, а їхні
-                щасливі життя мене
-                надихають.
-                В шлюбі 45 років та маємо дорослих дітей, троє онуків.
-                У вільний час малюю, танцюю, співаю, вирощую рослини та плекаю свій сад і город.
-                Окрім двох дипломів, пройшла тренінги з психодрами, символдрами, транзактного аналізу, арт-терапії,
-                системних
-                розстановок, роботи з родовими сценаріями та КПТ. Продовжую професійний розвиток: курси, тренінги,
-                особиста психотерапія
-                й супервізія.</p>
-            <div class="bio-diplomas">
-                <img src="images/diploma1.jpg" alt="Диплом 1">
-                <img src="images/diploma2.jpg" alt="Диплом 1">
-                <img src="images/diploma3.jpg" alt="Диплом 1">
-            </div>
-            <ul class="values-row">
-                <li><span class="val-ico"><i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i></span>Повага
-                    до
-                    кордонів і гідності кожної людини</li>
-                <li><span class="val-ico"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></span>Чесність,
-                    етичність та конфіденційність</li>
-                <li><span class="val-ico"><i class="fa-solid fa-seedling" aria-hidden="true"></i></span>Ріст через
-                    усвідомлення й відповідальність</li>
-                <li><span class="val-ico"><i class="fa-solid fa-people-arrows" aria-hidden="true"></i></span>Партнерство
-                    у
-                    терапії та діалог</li>
-                <li><span class="val-ico"><i class="fa-solid fa-face-smile-beam" aria-hidden="true"></i></span>Баланс
-                    тіла,
-                    емоцій і сенсів</li>
-            </ul>
+      <div class="bio-hero-inner">
+        <div class="title">
+          <h2 class="word-rainbow">Про мене</h2>
+          <img src="images/bacl-logo.png" class="line" alt="фон" />
         </div>
+        <p class="pricing-intro">
+          Мені 70 років. Понад 40 років практики. Пенсіонерка, яка продовжує
+          консультувати, бо люблю людей, їхній розвиток і досягнення. Кожен
+          клієнт для мене окремий Всесвіт, а їхні щасливі життя мене надихають.
+          В шлюбі 45 років та маємо дорослих дітей, троє онуків. У вільний час
+          малюю, танцюю, співаю, вирощую рослини та плекаю свій сад і город.
+          Окрім двох дипломів, пройшла тренінги з психодрами, символдрами,
+          транзактного аналізу, арт-терапії, системних розстановок, роботи з
+          родовими сценаріями та КПТ. Продовжую професійний розвиток: курси,
+          тренінги, особиста психотерапія й супервізія.
+        </p>
+        <div class="bio-diplomas">
+          <img src="images/diploma1.jpg" alt="Диплом 1" />
+          <img src="images/diploma2.jpg" alt="Диплом 1" />
+          <img src="images/diploma3.jpg" alt="Диплом 1" />
+        </div>
+        <ul class="values-row">
+          <li>
+            <span class="val-ico"
+              ><i
+                class="fa-solid fa-hand-holding-heart"
+                aria-hidden="true"
+              ></i></span
+            >Повага до кордонів і гідності кожної людини
+          </li>
+          <li>
+            <span class="val-ico"
+              ><i
+                class="fa-solid fa-scale-balanced"
+                aria-hidden="true"
+              ></i></span
+            >Чесність, етичність та конфіденційність
+          </li>
+          <li>
+            <span class="val-ico"
+              ><i class="fa-solid fa-seedling" aria-hidden="true"></i></span
+            >Ріст через усвідомлення й відповідальність
+          </li>
+          <li>
+            <span class="val-ico"
+              ><i
+                class="fa-solid fa-people-arrows"
+                aria-hidden="true"
+              ></i></span
+            >Партнерство у терапії та діалог
+          </li>
+          <li>
+            <span class="val-ico"
+              ><i
+                class="fa-solid fa-face-smile-beam"
+                aria-hidden="true"
+              ></i></span
+            >Баланс тіла, емоцій і сенсів
+          </li>
+        </ul>
+      </div>
     </section>
 
-
-
     <section id="services" class="reveal">
-        <div class="services-inner">
-            <div class="title">
-                <h2 class="word-rainbow">З чим я працюю</h2>
-                <img src="images/bacl-logo.png" class="line" alt="фон">
-            </div>
-            <p class="pricing-intro">
-                Ви отримаєте: <br>
-                Індивідуальний підхід, компетентну думку фахівця, атмосферу прийняття та довіри, гарантовану
-                конфіденційність, глибоке пропрацювання проблеми
-
-            </p>
-
-            <div class="svc-grid">
-                <article class="svc-card">
-
-                    <div>
-                        <h3 class="svc-heading word-rainbow"> На етапі
-                            планування сім'ї</h3>
-                        <ul class="svc-list">
-                            <li>Складання портрета партнера</li>
-                            <li>Розвиток діалогу в стосунках</li>
-                            <li>Спільна уява про шлюб</li>
-                            <li>Страхи вагітності, материнства/батьківства</li>
-                            <li>Важливість статусу (заміжня / одружений)</li>
-                            <li>Опрацювання різних моделей родини</li>
-                        </ul>
-                        <a href="https://t.me/Annapsihol" class="main-btn" target="_blank">Записатись</a>
-                    </div>
-                    <img src="images/services1.png" alt="Планування сім'ї — підготовка до стосунків та шлюбу">
-
-                </article>
-
-                <article class="svc-card">
-                    <img src="images/services2.png" alt="Психологічний супровід вагітності">
-                    <div>
-                        <h3 class="svc-heading word-rainbow">В період вагітності</h3>
-                        <ul class="svc-list">
-                            <li>Психологічний супровід вагітності</li>
-                            <li>Тривоги, депресія, страхи під час вагітності</li>
-                            <li>Стосунки в парі</li>
-                            <li>Небажана/незапланована вагітність</li>
-                            <li>Старша дитина і нова вагітність</li>
-                            <li>Втрата вагітності</li>
-                        </ul>
-                        <a href="https://t.me/Annapsihol" class="main-btn" target="_blank">Записатись</a>
-                    </div>
-
-                </article>
-
-
-                <article class="svc-card">
-
-                    <div>
-                        <h3 class="svc-heading word-rainbow">Після пологів</h3>
-                        <ul class="svc-list">
-                            <li>Післяпологова депресія</li>
-                            <li>Нова ідентичність: самореалізація і батьківство</li>
-                            <li>Тривога за себе або дитину</li>
-                        </ul>
-                        <a href="https://t.me/Annapsihol" class="main-btn" target="_blank">Записатись</a>
-                    </div>
-                    <img src="images/services3.jpeg" alt="Післяпологовий період і підтримка">
-                </article>
-
-
-                <article class="svc-card">
-                    <img src="images/services4.png" alt="Сімейна терапія, конфлікти, розлучення">
-                    <div>
-                        <h3 class="svc-heading word-rainbow"> В період сталого шлюбу</h3>
-                        <ul class="svc-list">
-                            <li>Емоційний дисонанс; складні почуття (страх, сум, злість)</li>
-                            <li>Конфлікти в родині (пара, батьки-діти)</li>
-                            <li>Психологічний супровід батьків підлітків</li>
-                            <li>Стани енергетичного спаду</li>
-                            <li>Саморозвиток, розбір родових сценаріїв</li>
-                            <li>Системні розстановки (графічні)</li>
-                            <li>Розлучення, горе</li>
-                            <li>Конфлікти</li>
-                            <li>Емоційна співзалежність</li>
-                            <li> Кризові періоди в родині</li>
-                            <li> Коли діти дорослі</li>
-                            <li> Труднощі подружжя пенсіонерів</li>
-                        </ul>
-                        <a href="https://t.me/Annapsihol" class="main-btn" target="_blank">Записатись</a>
-                    </div>
-
-                </article>
-            </div>
-
+      <div class="services-inner">
+        <div class="title">
+          <h2 class="word-rainbow">З чим я працюю</h2>
+          <img src="images/bacl-logo.png" class="line" alt="фон" />
         </div>
+        <p class="pricing-intro">
+          Ви отримаєте: <br />
+          Індивідуальний підхід, компетентну думку фахівця, атмосферу прийняття
+          та довіри, гарантовану конфіденційність, глибоке пропрацювання
+          проблеми
+        </p>
+
+        <div class="svc-grid">
+          <article class="svc-card">
+            <div>
+              <h3 class="svc-heading word-rainbow">
+                На етапі планування сім'ї
+              </h3>
+              <ul class="svc-list">
+                <li>Складання портрета партнера</li>
+                <li>Розвиток діалогу в стосунках</li>
+                <li>Спільна уява про шлюб</li>
+                <li>Страхи вагітності, материнства/батьківства</li>
+                <li>Важливість статусу (заміжня / одружений)</li>
+                <li>Опрацювання різних моделей родини</li>
+              </ul>
+              <a
+                href="https://t.me/Annapsihol"
+                class="main-btn modal-open-btn"
+                target="_blank"
+                >Записатись</a
+              >
+            </div>
+            <img
+              src="images/services1.png"
+              alt="Планування сім'ї — підготовка до стосунків та шлюбу"
+            />
+          </article>
+
+          <article class="svc-card">
+            <img
+              src="images/services2.png"
+              alt="Психологічний супровід вагітності"
+            />
+            <div>
+              <h3 class="svc-heading word-rainbow">В період вагітності</h3>
+              <ul class="svc-list">
+                <li>Психологічний супровід вагітності</li>
+                <li>Тривоги, депресія, страхи під час вагітності</li>
+                <li>Стосунки в парі</li>
+                <li>Небажана/незапланована вагітність</li>
+                <li>Старша дитина і нова вагітність</li>
+                <li>Втрата вагітності</li>
+              </ul>
+              <a
+                href="https://t.me/Annapsihol"
+                class="main-btn modal-open-btn"
+                target="_blank"
+                >Записатись</a
+              >
+            </div>
+          </article>
+
+          <article class="svc-card">
+            <div>
+              <h3 class="svc-heading word-rainbow">Після пологів</h3>
+              <ul class="svc-list">
+                <li>Післяпологова депресія</li>
+                <li>Нова ідентичність: самореалізація і батьківство</li>
+                <li>Тривога за себе або дитину</li>
+              </ul>
+              <a
+                href="https://t.me/Annapsihol"
+                class="main-btn modal-open-btn"
+                target="_blank"
+                >Записатись</a
+              >
+            </div>
+            <img
+              src="images/services3.jpeg"
+              alt="Післяпологовий період і підтримка"
+            />
+          </article>
+
+          <article class="svc-card">
+            <img
+              src="images/services4.png"
+              alt="Сімейна терапія, конфлікти, розлучення"
+            />
+            <div>
+              <h3 class="svc-heading word-rainbow">В період сталого шлюбу</h3>
+              <ul class="svc-list">
+                <li>
+                  Емоційний дисонанс; складні почуття (страх, сум, злість)
+                </li>
+                <li>Конфлікти в родині (пара, батьки-діти)</li>
+                <li>Психологічний супровід батьків підлітків</li>
+                <li>Стани енергетичного спаду</li>
+                <li>Саморозвиток, розбір родових сценаріїв</li>
+                <li>Системні розстановки (графічні)</li>
+                <li>Розлучення, горе</li>
+                <li>Конфлікти</li>
+                <li>Емоційна співзалежність</li>
+                <li>Кризові періоди в родині</li>
+                <li>Коли діти дорослі</li>
+                <li>Труднощі подружжя пенсіонерів</li>
+              </ul>
+              <a
+                href="https://t.me/Annapsihol"
+                class="main-btn modal-open-btn"
+                target="_blank"
+                >Записатись</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
     <section id="why" class="why-section reveal">
+      <div class="why-inner">
+        <div class="why-content">
+          <h2 id="why-title">Вам не потрібен психолог якщо:</h2>
 
-        <div class=" why-inner">
-            <div class="why-content">
-                <h2 id="why-title">Вам не потрібен психолог якщо:</h2>
+          <ol class="why-list">
+            <li class="why-point">
+              <span class="why-num">1</span>
+              <span class="why-text"
+                >Ви відчуваєте впевненість, а іноді сумніви у правильності своїх
+                рішень.</span
+              >
+            </li>
+            <li class="why-point">
+              <span class="why-num">2</span>
+              <span class="why-text">Ви відчуваєте свій шлях, як свій.</span>
+            </li>
+            <li class="why-point">
+              <span class="why-num">3</span>
+              <span class="why-text">Вам комфортно із своїми почуттями.</span>
+            </li>
+            <li class="why-point">
+              <span class="why-num">4</span>
+              <span class="why-text"
+                >Ви самостійно вирішуєте проблеми та долаєте труднощі.</span
+              >
+            </li>
+            <li class="why-point">
+              <span class="why-num">5</span>
+              <span class="why-text"
+                >Ви більше часу відчуваєте: радість, вдячність, спокій.</span
+              >
+            </li>
+            <li class="why-point">
+              <span class="why-num">6</span>
+              <span class="why-text"
+                >Злість, сум, страхи періодично проживаєте, але швидко виходите
+                на силу та рівновагу.</span
+              >
+            </li>
+          </ol>
 
-                <ol class="why-list">
-                    <li class="why-point">
-                        <span class="why-num">1</span>
-                        <span class="why-text">Ви відчуваєте впевненість, а іноді сумніви у правильності своїх
-                            рішень.</span>
-                    </li>
-                    <li class="why-point">
-                        <span class="why-num">2</span>
-                        <span class="why-text">Ви відчуваєте свій шлях, як свій.</span>
-                    </li>
-                    <li class="why-point">
-                        <span class="why-num">3</span>
-                        <span class="why-text">Вам комфортно із своїми почуттями.</span>
-                    </li>
-                    <li class="why-point">
-                        <span class="why-num">4</span>
-                        <span class="why-text">Ви самостійно вирішуєте проблеми та долаєте труднощі.</span>
-                    </li>
-                    <li class="why-point">
-                        <span class="why-num">5</span>
-                        <span class="why-text">Ви більше часу відчуваєте: радість, вдячність, спокій.</span>
-                    </li>
-                    <li class="why-point">
-                        <span class="why-num">6</span>
-                        <span class="why-text">Злість, сум, страхи періодично проживаєте, але швидко виходите на силу та
-                            рівновагу.</span>
-                    </li>
-                </ol>
-
-                <p class="why-conclusion">
-                    Тоді психолог потрібен лише, якщо ви хочете <b>глибше зрозуміти себе</b>,
-                    <b>сенс життя</b> та <b>розвитку</b>
-                    <span class="why-emoji">😂🤩💖🌈</span>
-                </p>
-            </div>
-
-            <aside class="why-side">
-                <figure class="why-portrait">
-                    <img src="images/owner.jpeg" alt="Анна Юріївна Настич — сімейний психолог" loading="lazy">
-                </figure>
-            </aside>
+          <p class="why-conclusion">
+            Тоді психолог потрібен лише, якщо ви хочете
+            <b>глибше зрозуміти себе</b>, <b>сенс життя</b> та <b>розвитку</b>
+            <span class="why-emoji">😂🤩💖🌈</span>
+          </p>
         </div>
-    </section>
 
+        <aside class="why-side">
+          <figure class="why-portrait">
+            <img
+              src="images/owner.jpeg"
+              alt="Анна Юріївна Настич — сімейний психолог"
+              loading="lazy"
+            />
+          </figure>
+        </aside>
+      </div>
+    </section>
 
     <section id="pricing" class="reveal">
-        <div class="pricing-inner">
-            <div class="title">
-                <h2 class="word-rainbow">Тарифи</h2>
-                <img src="images/bacl-logo.png" class="line" alt="фон">
-            </div>
-
-
-            <p class="pricing-intro">
-                Ціни актуальні на 2025 рік. <br>
-                Оберіть підходящий формат роботи. Всі консультації проводжу онлайн та офлайн.
-                Консультації веду укр/ рос мовою за бажанням клієнта.
-            </p>
-
-            <div class="pricing-grid">
-                <div class="price-card">
-                    <div>
-                        <h3>Діагностична зустріч</h3>
-                        <div class="price word-rainbow">1500 грн</div>
-                        <div class="duration">40 хвилин</div>
-                        <p>Первинна оцінка та визначення напрямку роботи</p>
-                    </div>
-
-                    <a href="https://t.me/Annapsihol" class="main-btn" target="_blank">Обрати</a>
-
-                </div>
-
-                <div class="price-card popular">
-                    <div>
-                        <h3>Індивідуальна консультація </h3>
-                        <div class="price word-rainbow">2200 грн <span>(або пільгова пропозиція)</span></div>
-                        <div class="duration">60 хвилин</div>
-                        <p>Персональна робота з індивідуальними запитами</p>
-                    </div>
-                    <a href="https://t.me/Annapsihol" class="main-btn" target="_blank">Популярний</a>
-                </div>
-
-                <div class="price-card">
-                    <div>
-                        <h3>Сімейна консультація</h3>
-                        <div class="price word-rainbow">5000 грн</div>
-                        <div class="duration">120 хвилин</div>
-                        <p>Робота з парами або батьками з дітьми</p>
-                    </div>
-
-                    <a href="https://t.me/Annapsihol" class="main-btn" target="_blank">Обрати</a>
-                </div>
-
-                <div class="price-card">
-                    <div>
-                        <h3>Розпаковка особистості</h3>
-                        <div class="price word-rainbow">6000 грн</div>
-                        <div class="duration">180 хвилин</div>
-                        <p>Глибока робота з особистістю та експертністю</p>
-                    </div>
-
-                    <a href="https://t.me/Annapsihol" class="main-btn" target="_blank">Обрати</a>
-                </div>
-
-                <div class="price-card">
-                    <div>
-                        <h3>Психологічний супровід</h3>
-                        <div class="price word-rainbow">1000 грн</div>
-                        <div class="duration">на місяць</div>
-                        <p>Індивідуальна переписка в Вайбер, Телеграм</p>
-                    </div>
-
-                    <a href="https://t.me/Annapsihol" class="main-btn" target="_blank">Обрати</a>
-                </div>
-
-                <div class="price-card">
-                    <div>
-                        <h3>Особисто в Києві</h3>
-                        <div class="price word-rainbow">+200 грн</div>
-                        <div class="duration">до вартості послуги</div>
-                        <p>Консультації в кабінеті (Дарниця)</p>
-                    </div>
-
-                    <a href="https://t.me/Annapsihol" class="main-btn" target="_blank">Деталі</a>
-                </div>
-            </div>
+      <div class="pricing-inner">
+        <div class="title">
+          <h2 class="word-rainbow">Тарифи</h2>
+          <img src="images/bacl-logo.png" class="line" alt="фон" />
         </div>
+
+        <p class="pricing-intro">
+          Оберіть підходящий формат роботи. Всі консультації проводжу онлайн та
+          офлайн. Консультації веду укр/ рос мовою за бажанням клієнта.
+        </p>
+
+        <div class="pricing-grid">
+          <div class="price-card">
+            <div>
+              <h3>Діагностична зустріч</h3>
+              <div class="price word-rainbow">1000 грн</div>
+              <div class="duration">40 хвилин</div>
+              <p>Первинна оцінка та визначення напрямку роботи</p>
+            </div>
+
+            <a href="https://t.me/Annapsihol" class="main-btn" target="_blank"
+              >Обрати</a
+            >
+          </div>
+
+          <div class="price-card popular">
+            <div>
+              <h3>Індивідуальна консультація</h3>
+              <div class="price word-rainbow">
+                2200 грн <span>(або пільгова пропозиція)</span>
+              </div>
+              <div class="duration">60 хвилин</div>
+              <p>Персональна робота з індивідуальними запитами</p>
+            </div>
+            <a href="https://t.me/Annapsihol" class="main-btn" target="_blank"
+              >Популярний</a
+            >
+          </div>
+
+          <div class="price-card">
+            <div>
+              <h3>Сімейна консультація</h3>
+              <div class="price word-rainbow">5000 грн</div>
+              <div class="duration">120 хвилин</div>
+              <p>Робота з парами або батьками з дітьми</p>
+            </div>
+
+            <a href="https://t.me/Annapsihol" class="main-btn" target="_blank"
+              >Обрати</a
+            >
+          </div>
+
+          <div class="price-card">
+            <div>
+              <h3>Розпаковка особистості</h3>
+              <div class="price word-rainbow">6000 грн</div>
+              <div class="duration">180 хвилин</div>
+              <p>Глибока робота з особистістю та експертністю</p>
+            </div>
+
+            <a href="https://t.me/Annapsihol" class="main-btn" target="_blank"
+              >Обрати</a
+            >
+          </div>
+
+          <div class="price-card">
+            <div>
+              <h3>Психологічний супровід</h3>
+              <div class="price word-rainbow">1000 грн</div>
+              <div class="duration">на місяць</div>
+              <p>Індивідуальна переписка в Вайбер, Телеграм</p>
+            </div>
+
+            <a href="https://t.me/Annapsihol" class="main-btn" target="_blank"
+              >Обрати</a
+            >
+          </div>
+
+          <div class="price-card">
+            <div>
+              <h3>Особисто в Києві</h3>
+              <div class="price word-rainbow">+200 грн</div>
+              <div class="duration">до вартості послуги</div>
+              <p>Консультації в кабінеті (Дарниця)</p>
+            </div>
+
+            <a href="https://t.me/Annapsihol" class="main-btn" target="_blank"
+              >Деталі</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Групові онлайн зустрічі "Джерело" -->
+      <div class="price-card group-support">
+        <h3>Групові онлайн зустрічі "Джерело"</h3>
+        <p>Дівчата 18+ 💛</p>
+        <span>
+          Якщо відчуваєте втому від постійної напруги війни, сімейних
+          непорозумінь, втрат чи просто життя «на автоматі» — вам не потрібно
+          залишатися з цим наодинці.<br />
+          Запрошую на групові щотижневі онлайн-зустрічі з сімейним
+          психологом.<br />
+          <b>Кожного понеділка з 19:00 до 21:00</b> — простір, де можна
+          виговоритися, почути підтримку, поставити питання і відчути, що вас
+          розуміють.
+        </span>
+        <ul class="svc-list">
+          <li>Емоційна опора в непростий час</li>
+          <li>Відповіді на хвилюючі питання</li>
+          <li>Відчуття «я не одна»</li>
+          <li>Безпечне жіноче коло</li>
+          <li>Живе спілкування замість хаосу в голові</li>
+        </ul>
+        <p class="price word-rainbow">333 грн/місяць</p>
+        <p>
+          Це не терапія, а дружня підтримка від фахівця, яка може стати вашим
+          щотижневим ресурсом.
+        </p>
+        <a href="https://t.me/Annapsihol" class="main-btn">Приєднатись</a>
+      </div>
     </section>
     <section id="reviews" class="reviews-section reveal">
-        <div class="reviews-inner">
-            <div class="title">
-                <h2 class="word-rainbow">Відгуки</h2>
-                <img src="images/bacl-logo.png" class="line" alt="фон">
-            </div>
-
-            <p class="reviews-intro">
-                Живі історії клієнтів про турботу, підтримку та трансформації. Ще більше відгуків у моєму Instagram.
-            </p>
-
-            <div class="reviews-grid" role="list">
-                <figure class="review-card" role="listitem">
-                    <img src="images/r1.jpeg" alt="Фото з консультації: усміхнена клієнтка" loading="lazy">
-                    <figcaption>
-                        <div class="stars" aria-label="Оцінка: 5 зірок">
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                        </div>
-                        <blockquote>
-                            Друзі всім рекомендую психолога Анну Юріївну. Моє життя почало змінюватися після зустрічі з
-                            Анною Юріївною. Питання які
-                            заважали мені спокійно жити, після зустрічі з психологом,легко находили відповіді! Не
-                            вагайтеся,скоріше пишіть Анні
-                            Юріївні❤️
-                        </blockquote>
-                        <span class="author">Олена</span>
-                    </figcaption>
-                </figure>
-
-                <figure class="review-card" role="listitem">
-                    <img src="images/r2.jpeg" alt="Фото з відгуку: пара після консультації" loading="lazy">
-                    <figcaption>
-                        <div class="stars" aria-label="Оцінка: 5 зірок">
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                        </div>
-                        <blockquote>
-                            Дуже мудро! Я ніколи так не думала, нажаль. Тепер завдяки вам, я змінила свою думку, і буду
-                            робити тільки так, я буду
-                            дбати про себе, щоб потім, коли я буду наповнена, в мене було чим поділитися з моїм коханим,
-                            з дітьми можливо. В мене
-                            буде бажанням, енергія, настрій.
-                        </blockquote>
-                        <span class="author">Олена</span>
-                    </figcaption>
-                </figure>
-
-                <figure class="review-card" role="listitem">
-                    <img src="images/r3.jpeg" alt="Фото: клієнтка тримає записник після сесії" loading="lazy">
-                    <figcaption>
-                        <div class="stars" aria-label="Оцінка: 5 зірок">
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                        </div>
-                        <blockquote>
-                            Знову після багатьох років проявила себе пухлина головного мозку ускладненням у рухах і
-                            часовою втратою зору. Трохи
-                            злякана. Не справляюся. Чи можете допомогти як 10 років назад?
-                        </blockquote>
-                        <span class="author">Алла</span>
-                    </figcaption>
-                </figure>
-            </div>
-
-            <div class="reviews-cta">
-                <a href="https://www.instagram.com/nastich.anna" class="main-btn" target="_blank" rel="noopener">
-                    <i class="fab fa-instagram" aria-hidden="true"></i> Більше відгуків
-                </a>
-            </div>
+      <div class="reviews-inner">
+        <div class="title">
+          <h2 class="word-rainbow">Відгуки</h2>
+          <img src="images/bacl-logo.png" class="line" alt="фон" />
         </div>
+
+        <p class="reviews-intro">
+          Живі історії клієнтів про турботу, підтримку та трансформації. Ще
+          більше відгуків у моєму Instagram.
+        </p>
+
+        <div class="reviews-grid" role="list">
+          <figure class="review-card" role="listitem">
+            <img
+              src="images/r1.jpeg"
+              alt="Фото з консультації: усміхнена клієнтка"
+              loading="lazy"
+            />
+            <figcaption>
+              <div class="stars" aria-label="Оцінка: 5 зірок">
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+              </div>
+              <blockquote>
+                Друзі всім рекомендую психолога Анну Юріївну. Моє життя почало
+                змінюватися після зустрічі з Анною Юріївною. Питання які
+                заважали мені спокійно жити, після зустрічі з психологом,легко
+                находили відповіді! Не вагайтеся,скоріше пишіть Анні Юріївні❤️
+              </blockquote>
+              <span class="author">Олена</span>
+            </figcaption>
+          </figure>
+
+          <figure class="review-card" role="listitem">
+            <img
+              src="images/r2.jpeg"
+              alt="Фото з відгуку: пара після консультації"
+              loading="lazy"
+            />
+            <figcaption>
+              <div class="stars" aria-label="Оцінка: 5 зірок">
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+              </div>
+              <blockquote>
+                Дуже мудро! Я ніколи так не думала, нажаль. Тепер завдяки вам, я
+                змінила свою думку, і буду робити тільки так, я буду дбати про
+                себе, щоб потім, коли я буду наповнена, в мене було чим
+                поділитися з моїм коханим, з дітьми можливо. В мене буде
+                бажанням, енергія, настрій.
+              </blockquote>
+              <span class="author">Олена</span>
+            </figcaption>
+          </figure>
+
+          <figure class="review-card" role="listitem">
+            <img
+              src="images/r3.jpeg"
+              alt="Фото: клієнтка тримає записник після сесії"
+              loading="lazy"
+            />
+            <figcaption>
+              <div class="stars" aria-label="Оцінка: 5 зірок">
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+              </div>
+              <blockquote>
+                Знову після багатьох років проявила себе пухлина головного мозку
+                ускладненням у рухах і часовою втратою зору. Трохи злякана. Не
+                справляюся. Чи можете допомогти як 10 років назад?
+              </blockquote>
+              <span class="author">Алла</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="reviews-cta">
+          <a
+            href="https://www.instagram.com/nastich.anna"
+            class="main-btn"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-instagram" aria-hidden="true"></i> Більше відгуків
+          </a>
+        </div>
+      </div>
+      <video
+        class="x1lliihq x5yr21d xh8yej3"
+        playsinline=""
+        preload="none"
+        src="blob:https://www.instagram.com/29247d49-d67b-459b-bd9e-5661510b9131"
+        style="object-fit: cover; display: block"
+      ></video>
     </section>
 
     <section id="contact" class="contact-section reveal">
-        <div class="contact-inner">
-            <div class="title">
-                <h2 class="word-rainbow">Контакти та мій підхід</h2>
-                <img src="images/bacl-logo.png" class="line" alt="фон">
-            </div>
-
-            <div class="contact-grid">
-
-                <article class="price-card rules-card">
-                    <div class="rules-media">
-
-                        <img src="images/services5.png" alt="Ілюстрація: сімʼя" loading="lazy">
-                    </div>
-                    <div class="rules-text">
-                        <h3 class="word-rainbow">Як я не працюю</h3>
-                        <ul class="svc-list">
-                            <li>Не працюю окремо з дітьми без роботи з їх батьками.</li>
-                            <li>Не працюю з людьми з діагностованими психічними розладами, якщо вони не лікуються
-                                паралельно
-                                у психіатра.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="price-card contact-card">
-                    <div class="logo logo--small">
-                        <img src="images/logo.png" alt="Анна Юріївна Настич">
-                    </div>
-
-                    <p class="contact-text">
-                        В роботі використовую <b>інтеграційний підхід</b> — поєдную методи з різних
-                        психологічних напрямків (транзактний аналіз, психо драма, Арт-терапія, символ
-                        драма, гештальт, КПТ, PSY- 2.0, метод звукової терапії), зважаючи на індивідуальні потреби та
-                        обставини клієнта.
-                        <span class="word-rainbow">Це дозволяє гнучко підбирати вправи, методи, завдання та техніки під
-                            ваш
-                            запит.</span>
-                    </p>
-
-                    <div class="contact-actions">
-                        <a href="https://www.instagram.com/nastich.anna" class="main-btn" target="_blank"
-                            rel="noopener">
-                            <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
-                        </a>
-                        <a href="https://t.me/Annapsihol" target="_blank" class="main-btn btn-outline">
-                            Записатись
-                        </a>
-                    </div>
-                </article>
-
-            </div>
+      <div class="contact-inner">
+        <div class="title">
+          <h2 class="word-rainbow">Контакти та мій підхід</h2>
+          <img src="images/bacl-logo.png" class="line" alt="фон" />
         </div>
+
+        <div class="contact-grid">
+          <article class="price-card rules-card">
+            <div class="rules-media">
+              <img
+                src="images/services5.png"
+                alt="Ілюстрація: сімʼя"
+                loading="lazy"
+              />
+            </div>
+            <div class="rules-text">
+              <h3 class="word-rainbow">Як я не працюю</h3>
+              <ul class="svc-list">
+                <li>Не працюю окремо з дітьми без роботи з їх батьками.</li>
+                <li>
+                  Не працюю з людьми з діагностованими психічними розладами,
+                  якщо вони не лікуються паралельно у психіатра.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="price-card contact-card">
+            <div class="logo logo--small">
+              <img src="images/logo.png" alt="Анна Юріївна Настич" />
+            </div>
+
+            <p class="contact-text">
+              В роботі використовую <b>інтеграційний підхід</b> — поєдную методи
+              з різних психологічних напрямків (транзактний аналіз, психо драма,
+              Арт-терапія, символ драма, гештальт, КПТ, PSY- 2.0, метод звукової
+              терапії), зважаючи на індивідуальні потреби та обставини клієнта.
+              <span class="word-rainbow"
+                >Це дозволяє гнучко підбирати вправи, методи, завдання та
+                техніки під ваш запит.</span
+              >
+            </p>
+
+            <div class="contact-actions">
+              <a
+                href="https://www.instagram.com/nastich.anna"
+                class="main-btn"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
+              </a>
+              <a
+                href="https://t.me/Annapsihol"
+                target="_blank"
+                class="main-btn btn-outline modal-open-btn"
+              >
+                Записатись
+              </a>
+            </div>
+
+            <section class="socials-section">
+              <div class="socials-wrapper">
+                <a
+                  href="https://www.youtube.com/@АннаНастич-с4е"
+                  target="_blank"
+                  class="social-circle"
+                >
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a
+                  href="https://www.threads.com/@nastich.anna"
+                  target="_blank"
+                  class="social-circle"
+                >
+                  <img
+                    src="images/threads-icon.png"
+                    alt="Threads"
+                    style="width: 28px; height: 28px"
+                  />
+                </a>
+
+                <a
+                  href="https://www.facebook.com/anna.uriivna.nastic.izko"
+                  target="_blank"
+                  class="social-circle"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a
+                  href="https://www.tiktok.com/@anna.nastich"
+                  target="_blank"
+                  class="social-circle"
+                >
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+              </div>
+            </section>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <div class="x-modal" id="memo-modal" aria-hidden="true" role="dialog" aria-modal="true"
-        aria-labelledby="memo-title">
-        <div class="x-modal__overlay" data-modal-close></div>
+    <div
+      class="x-modal"
+      id="memo-modal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="memo-title"
+    >
+      <div class="x-modal__overlay" data-modal-close></div>
 
-        <div class="x-modal__dialog" role="document">
-            <button class="x-modal__close" type="button" aria-label="Закрити" data-modal-close>&times;</button>
+      <div class="x-modal__dialog" role="document">
+        <button
+          class="x-modal__close"
+          type="button"
+          aria-label="Закрити"
+          data-modal-close
+        >
+          &times;
+        </button>
 
-            <header class="x-modal__head">
-                <img src="images/logo.png" alt="Логотип" class="x-modal__logo">
-                <h3 id="memo-title" class="word-rainbow">ПАМ’ЯТКА: як підготуватися до консультації</h3>
-            </header>
+        <header class="x-modal__head">
+          <img src="images/logo.png" alt="Логотип" class="x-modal__logo" />
+          <h3 id="memo-title" class="word-rainbow">
+            ПАМ’ЯТКА: як підготуватися до консультації
+          </h3>
+        </header>
 
-            <div class="x-modal__body">
-                <section class="x-modal__section">
-                    <h4>Перед консультацією</h4>
-                    <ul>
-                        <li>Не приймайте заспокійливі, не вживайте алкоголь, каву та міцний чай у день консультації.
-                        </li>
-                        <li>Підготуйте безпечний простір, де вас ніхто не турбуватиме.</li>
-                        <li>Зарядiть гаджети, перевірте інтернет/зв’язок.</li>
-                        <li>Налаштуйтеся на пізнання нового досвіду та щирий діалог.</li>
-                    </ul>
-                </section>
+        <div class="x-modal__body">
+          <section class="x-modal__section">
+            <h4>Перед консультацією</h4>
+            <ul>
+              <li>
+                Не приймайте заспокійливі, не вживайте алкоголь, каву та міцний
+                чай у день консультації.
+              </li>
+              <li>
+                Підготуйте безпечний простір, де вас ніхто не турбуватиме.
+              </li>
+              <li>Зарядiть гаджети, перевірте інтернет/зв’язок.</li>
+              <li>Налаштуйтеся на пізнання нового досвіду та щирий діалог.</li>
+            </ul>
+          </section>
 
-                <section class="x-modal__section">
-                    <h4>Що варто підготувати</h4>
-                    <ul class="x-two-cols">
-                        <li>Вода для пиття</li>
-                        <li>Серветки</li>
-                        <li>Старі газети</li>
-                        <li>Аркуші А4</li>
-                        <li>Простий м’який олівець</li>
-                        <li>Ластик</li>
-                        <li>Ручка</li>
-                        <li>Набір кольорових фломастерів</li>
-                    </ul>
-                    <p class="x-note">Бажано, щоб туалет був поруч 😊</p>
-                </section>
+          <section class="x-modal__section">
+            <h4>Що варто підготувати</h4>
+            <ul class="x-two-cols">
+              <li>Вода для пиття</li>
+              <li>Серветки</li>
+              <li>Старі газети</li>
+              <li>Аркуші А4</li>
+              <li>Простий м’який олівець</li>
+              <li>Ластик</li>
+              <li>Ручка</li>
+              <li>Набір кольорових фломастерів</li>
+            </ul>
+            <p class="x-note">Бажано, щоб туалет був поруч 😊</p>
+          </section>
 
-                <section class="x-modal__section">
-                    <h4>Формати психологічної підтримки</h4>
-                    <ol>
-                        <li><b>«Нахлинуло — ділюся».</b> Вчимося описувати стани, почуття та емоції. Від мене —
-                            запитання
-                            для уточнення.</li>
-                        <li><b>«Щоденник, що відповідає».</b> Ви пишете, я відповідаю роздумами й наводжу фокус на
-                            важливе.
-                        </li>
-                        <li><b>«Дослідження мого життя».</b> Обираємо тему на місяць (роздратування, реакції на образу,
-                            тілесні прояви тощо). Я підбираю вправи та завдання.</li>
-                        <li><b>Швидка допомога.</b> Коли важко впоратись зі стресом/емоціями — домовляємось про 15–20 хв
-                            онлайн-переписки для стабілізації стану.</li>
-                        <li><b>«Буксир».</b> На місяць я м’яко ініціюю й підштовхую до корисної активності.</li>
-                    </ol>
-                    <p class="x-note">Ви обираєте комфортний формат на місяць, а я рухаюся за вашим запитом.</p>
-                </section>
+          <section class="x-modal__section">
+            <h4>Формати психологічної підтримки</h4>
+            <ol>
+              <li>
+                <b>«Нахлинуло — ділюся».</b> Вчимося описувати стани, почуття та
+                емоції. Від мене — запитання для уточнення.
+              </li>
+              <li>
+                <b>«Щоденник, що відповідає».</b> Ви пишете, я відповідаю
+                роздумами й наводжу фокус на важливе.
+              </li>
+              <li>
+                <b>«Дослідження мого життя».</b> Обираємо тему на місяць
+                (роздратування, реакції на образу, тілесні прояви тощо). Я
+                підбираю вправи та завдання.
+              </li>
+              <li>
+                <b>Швидка допомога.</b> Коли важко впоратись зі стресом/емоціями
+                — домовляємось про 15–20 хв онлайн-переписки для стабілізації
+                стану.
+              </li>
+              <li>
+                <b>«Буксир».</b> На місяць я м’яко ініціюю й підштовхую до
+                корисної активності.
+              </li>
+            </ol>
+            <p class="x-note">
+              Ви обираєте комфортний формат на місяць, а я рухаюся за вашим
+              запитом.
+            </p>
+          </section>
 
-                <section class="x-modal__section">
-                    <h4>Якщо хочеться «втекти» з терапії</h4>
-                    <ul>
-                        <li>Не зупиняємося на поверхні — досліджуємо: <i>хто</i> тікає всередині мене, <i>від кого</i> і
-                            <i>чому саме зараз</i>.
-                        </li>
-                        <li>Робимо сам факт бажання піти матеріалом терапії — це ключ до глибшого конфлікту, а не
-                            «помилка».
-                        </li>
-                        <li>Розрізняємо «я хочу піти» і «я хочу змін». Часто потрібна зміна темпу/формату, а не розрив
-                            стосунку з терапією.</li>
-                    </ul>
-                </section>
-            </div>
-
-            <footer class="x-modal__footer">
-                <a href="https://t.me/Annapsihol" class="main-btn" target="_blank" rel="noopener">Записатись</a>
-                <button class="main-btn btn-outline" type="button" data-modal-close>Зрозуміло</button>
-            </footer>
+          <section class="x-modal__section">
+            <h4>Якщо хочеться «втекти» з терапії</h4>
+            <ul>
+              <li>
+                Не зупиняємося на поверхні — досліджуємо: <i>хто</i> тікає
+                всередині мене, <i>від кого</i> і <i>чому саме зараз</i>.
+              </li>
+              <li>
+                Робимо сам факт бажання піти матеріалом терапії — це ключ до
+                глибшого конфлікту, а не «помилка».
+              </li>
+              <li>
+                Розрізняємо «я хочу піти» і «я хочу змін». Часто потрібна зміна
+                темпу/формату, а не розрив стосунку з терапією.
+              </li>
+            </ul>
+          </section>
         </div>
+
+        <footer class="x-modal__footer">
+          <a
+            href="https://t.me/Annapsihol"
+            class="main-btn modal-open-btn"
+            target="_blank"
+            rel="noopener"
+            >Записатись</a
+          >
+          <button class="main-btn btn-outline" type="button" data-modal-close>
+            Зрозуміло
+          </button>
+        </footer>
+      </div>
     </div>
 
+    <!-- MODAL OVERLAY -->
+    <div class="modal-overlay" id="modal-overlay"></div>
 
+    <!-- MODAL WINDOW -->
+    <div class="modal-window" id="modal-window">
+      <button class="modal-close" id="modal-close">&times;</button>
 
+      <h3 class="modal-title">Обрати спосіб зв'язку</h3>
 
+      <div class="modal-actions">
+        <a
+          href="https://instagram.com/nastich.anna"
+          target="_blank"
+          class="modal-btn insta"
+        >
+          <i class="fa-brands fa-instagram"></i> Написати в Instagram
+        </a>
+
+        <a href="https://t.me/Annapsihol" target="_blank" class="modal-btn tg">
+          <i class="fa-brands fa-telegram"></i> Написати у Telegram
+        </a>
+
+        <button class="modal-btn form-btn" id="open-form">
+          <i class="fa-regular fa-envelope"></i> Залишити контакти
+        </button>
+      </div>
+
+      <!-- FORM -->
+      <form id="contact-form" class="modal-form">
+        <input type="text" placeholder="Ваше ім’я" required />
+        <input type="email" placeholder="Email" required />
+        <input type="tel" placeholder="Номер телефону" required />
+        <button type="submit" class="modal-submit">Зв’яжіться зі мною</button>
+      </form>
+    </div>
 
     <script>
-        (function () {
-            const burger = document.getElementById('x-burger');
-            const panel = document.getElementById('x-offcanvas');
-            const overlay = document.getElementById('x-overlay');
-            const close = document.getElementById('x-close');
+      (function () {
+        const burger = document.getElementById("x-burger");
+        const panel = document.getElementById("x-offcanvas");
+        const overlay = document.getElementById("x-overlay");
+        const close = document.getElementById("x-close");
 
-            const openMenu = () => {
-                document.body.classList.add('x-menu-open');
-                panel.classList.add('is-open');
-                overlay.classList.add('is-open');
-                burger.classList.add('is-active');
-                burger.setAttribute('aria-expanded', 'true');
-                panel.setAttribute('aria-hidden', 'false');
-                overlay.setAttribute('aria-hidden', 'false');
-            };
-            const closeMenu = () => {
-                document.body.classList.remove('x-menu-open');
-                panel.classList.remove('is-open');
-                overlay.classList.remove('is-open');
-                burger.classList.remove('is-active');
-                burger.setAttribute('aria-expanded', 'false');
-                panel.setAttribute('aria-hidden', 'true');
-                overlay.setAttribute('aria-hidden', 'true');
-            };
+        const openMenu = () => {
+          document.body.classList.add("x-menu-open");
+          panel.classList.add("is-open");
+          overlay.classList.add("is-open");
+          burger.classList.add("is-active");
+          burger.setAttribute("aria-expanded", "true");
+          panel.setAttribute("aria-hidden", "false");
+          overlay.setAttribute("aria-hidden", "false");
+        };
+        const closeMenu = () => {
+          document.body.classList.remove("x-menu-open");
+          panel.classList.remove("is-open");
+          overlay.classList.remove("is-open");
+          burger.classList.remove("is-active");
+          burger.setAttribute("aria-expanded", "false");
+          panel.setAttribute("aria-hidden", "true");
+          overlay.setAttribute("aria-hidden", "true");
+        };
 
-            if (burger) { burger.addEventListener('click', () => panel.classList.contains('is-open') ? closeMenu() : openMenu()); }
-            if (close) { close.addEventListener('click', closeMenu); }
-            if (overlay) { overlay.addEventListener('click', closeMenu); }
+        if (burger) {
+          burger.addEventListener("click", () =>
+            panel.classList.contains("is-open") ? closeMenu() : openMenu()
+          );
+        }
+        if (close) {
+          close.addEventListener("click", closeMenu);
+        }
+        if (overlay) {
+          overlay.addEventListener("click", closeMenu);
+        }
 
+        document.querySelectorAll("[data-x-close]").forEach((a) => {
+          a.addEventListener("click", closeMenu);
+        });
 
-            document.querySelectorAll('[data-x-close]').forEach(a => {
-                a.addEventListener('click', closeMenu);
-            });
+        window.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && panel.classList.contains("is-open"))
+            closeMenu();
+        });
+      })();
 
+      (function () {
+        const body = document.body;
+        let activeModal = null,
+          lastFocus = null;
 
-            window.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && panel.classList.contains('is-open')) closeMenu();
-            });
-        })();
+        const qsa = (root, sel) => Array.from(root.querySelectorAll(sel));
+        const focusablesSel =
+          'a[href],button:not([disabled]),[tabindex]:not([tabindex="-1"]),textarea,input,select';
 
-        (function () {
-            const body = document.body;
-            let activeModal = null, lastFocus = null;
+        function openModal(sel) {
+          const modal =
+            typeof sel === "string" ? document.querySelector(sel) : sel;
+          if (!modal) return;
+          lastFocus = document.activeElement;
+          activeModal = modal;
+          modal.classList.add("is-open");
+          modal.setAttribute("aria-hidden", "false");
+          body.classList.add("x-modal-open");
 
-            const qsa = (root, sel) => Array.from(root.querySelectorAll(sel));
-            const focusablesSel = 'a[href],button:not([disabled]),[tabindex]:not([tabindex="-1"]),textarea,input,select';
+          const f = qsa(modal, focusablesSel);
+          if (f.length) f[0].focus();
 
-            function openModal(sel) {
-                const modal = typeof sel === 'string' ? document.querySelector(sel) : sel;
-                if (!modal) return;
-                lastFocus = document.activeElement;
-                activeModal = modal;
-                modal.classList.add('is-open');
-                modal.setAttribute('aria-hidden', 'false');
-                body.classList.add('x-modal-open');
+          document.addEventListener("keydown", onKeydown);
+        }
 
-                const f = qsa(modal, focusablesSel);
-                if (f.length) f[0].focus();
+        function closeModal() {
+          if (!activeModal) return;
+          activeModal.classList.remove("is-open");
+          activeModal.setAttribute("aria-hidden", "true");
+          body.classList.remove("x-modal-open");
+          document.removeEventListener("keydown", onKeydown);
+          if (lastFocus) lastFocus.focus();
+          activeModal = null;
+        }
 
-                document.addEventListener('keydown', onKeydown);
+        function onKeydown(e) {
+          if (!activeModal) return;
+          if (e.key === "Escape") return closeModal();
+          if (e.key === "Tab") {
+            const f = qsa(activeModal, focusablesSel);
+            if (!f.length) return;
+            const first = f[0],
+              last = f[f.length - 1];
+            if (e.shiftKey && document.activeElement === first) {
+              e.preventDefault();
+              last.focus();
+            } else if (!e.shiftKey && document.activeElement === last) {
+              e.preventDefault();
+              first.focus();
             }
+          }
+        }
 
-            function closeModal() {
-                if (!activeModal) return;
-                activeModal.classList.remove('is-open');
-                activeModal.setAttribute('aria-hidden', 'true');
-                body.classList.remove('x-modal-open');
-                document.removeEventListener('keydown', onKeydown);
-                if (lastFocus) lastFocus.focus();
-                activeModal = null;
-            }
-
-            function onKeydown(e) {
-                if (!activeModal) return;
-                if (e.key === 'Escape') return closeModal();
-                if (e.key === 'Tab') {
-                    const f = qsa(activeModal, focusablesSel);
-                    if (!f.length) return;
-                    const first = f[0], last = f[f.length - 1];
-                    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-                    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
-                }
-            }
-
-            document.querySelectorAll('[data-modal-open]').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    openModal(btn.getAttribute('data-modal-open'));
-                });
-            });
-            document.querySelectorAll('[data-modal-close]').forEach(el => {
-                el.addEventListener('click', closeModal);
-            });
-        })();
-
+        document.querySelectorAll("[data-modal-open]").forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            openModal(btn.getAttribute("data-modal-open"));
+          });
+        });
+        document.querySelectorAll("[data-modal-close]").forEach((el) => {
+          el.addEventListener("click", closeModal);
+        });
+      })();
     </script>
 
+    <script>
+      const modalOverlay = document.getElementById("modal-overlay");
+      const modalWindow = document.getElementById("modal-window");
+      const modalClose = document.getElementById("modal-close");
+      const openFormBtn = document.getElementById("open-form");
+      const form = document.getElementById("contact-form");
 
-</body>
+      // Відкрити модалку (всі кнопки "Записатись")
+      document.querySelectorAll(".modal-open-btn").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          modalOverlay.classList.add("active");
+          modalWindow.classList.add("active");
+        });
+      });
 
+      // Закрити
+      modalClose.addEventListener("click", () => {
+        modalOverlay.classList.remove("active");
+        modalWindow.classList.remove("active");
+      });
+
+      // Клік поза вікном
+      modalOverlay.addEventListener("click", () => {
+        modalOverlay.classList.remove("active");
+        modalWindow.classList.remove("active");
+      });
+
+      // Показати форму
+      openFormBtn.addEventListener("click", () => {
+        form.classList.add("active");
+      });
+    </script>
+  </body>
 </html>
