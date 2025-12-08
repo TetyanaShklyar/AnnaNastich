@@ -1721,14 +1721,13 @@ body.x-modal-open {
 .reviews-section {
   position: relative;
   padding: clamp(56px, 8vw, 110px) 18px;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.25) 30%,
-      rgba(255, 255, 255, 0.6) 70%,
-      #fff 100%
-    ),
-    url(images/reviews-bg.png);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.25) 30%,
+    rgba(255, 255, 255, 0.6) 70%,
+    #fff 100%
+  );
   padding-bottom: 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1757,9 +1756,7 @@ body.x-modal-open {
   position: relative;
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 14px 36px rgba(158, 106, 184, 0.22);
   isolation: isolate;
-  aspect-ratio: 4 / 5;
   display: grid;
   align-content: end;
 }
@@ -1842,9 +1839,6 @@ body.x-modal-open {
   .reviews-grid {
     grid-template-columns: 1fr;
     gap: 16px;
-  }
-  .review-card {
-    aspect-ratio: 3 / 4;
   }
   .reviews-section {
     padding-bottom: 0;
@@ -2182,4 +2176,311 @@ body.x-modal-open {
   .group-support .main-btn {
     padding: 12px 36px;
   }
+  .modal-btn {
+    font-size: 16px;
+  }
+  .modal-title {
+    font-size: 20px;
+  }
+  .modal-close {
+    top: 5px;
+  }
+  .modal-form input {
+    padding: 10px 15px;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+}
+
+.diplomas-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 40px 0;
+  padding: 0 20px;
+}
+
+.bio-diplomas {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 6px;
+}
+.bio-diplomas::-webkit-scrollbar {
+  display: none;
+}
+
+.bio-diplomas img {
+  flex: 0 0 auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease;
+  scroll-snap-align: start;
+}
+
+@media (min-width: 991px) {
+  .bio-diplomas img {
+    width: calc((100% - 40px - 2 * 20px) / 3);
+    height: 320px;
+  }
+}
+@media (max-width: 990px) and (min-width: 601px) {
+  .bio-diplomas img {
+    width: calc((100% - 40px - 1 * 20px) / 2);
+    height: 300px;
+  }
+}
+@media (max-width: 600px) {
+  .bio-diplomas img {
+    width: 86vw;
+    height: auto;
+  }
+  .diplomas-wrapper {
+    padding: 0 8px;
+  }
+}
+
+.bio-diplomas img:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+.diploma-arrow {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(90deg, var(--x-accent), #ffd3c7);
+  box-shadow: 0 10px 26px rgba(158, 106, 184, 0.22);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  z-index: 10;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.diploma-arrow:hover {
+  transform: translateY(-50%) scale(1.06);
+  box-shadow: 0 14px 36px rgba(158, 106, 184, 0.3);
+}
+
+.diploma-arrow.left {
+  left: 8px;
+}
+.diploma-arrow.right {
+  right: 8px;
+}
+
+.diploma-arrow.left::before,
+.diploma-arrow.right::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.diploma-arrow.left::before {
+  border-right: 12px solid #fff;
+  transform: translateX(-2px);
+}
+.diploma-arrow.right::before {
+  border-left: 12px solid #fff;
+  transform: translateX(2px);
+}
+
+@media (max-width: 420px) {
+  .diploma-arrow {
+    display: none;
+  }
+}
+
+.reviews-section {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto 20px;
+}
+
+.reviews-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.reviews-track {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.45s ease;
+}
+
+/* КАРТОЧКИ */
+.review-slide {
+  min-width: calc(100% / 3 - 20px);
+  height: 480px;
+}
+
+@media (max-width: 900px) {
+  .review-slide {
+    min-width: 100%;
+  }
+  .reviews-track {
+    gap: 0;
+  }
+}
+
+.review-card {
+  height: 480px;
+}
+
+/* ВІДЕО */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  height: 100%;
+}
+
+.video-review {
+  overflow: hidden;
+}
+
+.video-thumb {
+  width: 100%;
+  display: block;
+}
+
+.video-play {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  color: var(--x-accent);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.review-video {
+  width: 100%;
+  display: none;
+}
+
+.rev-arrow {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: rgba(158, 106, 184, 0.22) 0px 10px 26px;
+  cursor: pointer;
+  display: grid;
+  z-index: 10;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  border-radius: 50%;
+  background: linear-gradient(90deg, var(--x-accent), #ffd3c7);
+  place-items: center;
+  z-index: 10;
+}
+.rev-prev {
+  left: -10px;
+}
+.rev-next {
+  right: -10px;
+}
+
+.rev-arrow.rev-prev::before,
+.rev-arrow.rev-next::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.rev-arrow.rev-prev::before {
+  border-right: 12px solid #fff;
+  transform: translateX(-2px);
+}
+.rev-arrow.rev-next::before {
+  border-left: 12px solid #fff;
+  transform: translateX(2px);
+}
+
+.video-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.video-play.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Відео має бути завжди на фоні, але видно */
+.review-video {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+  z-index: 1;
+}
+
+/* Картинка поверх відео */
+.video-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 3;
+  transition: opacity 0.2s ease;
+}
+
+/* Кнопка play — ще вище */
+.video-play {
+  position: absolute;
+  top: 30%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.video-play.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.video-thumb.hidden {
+  opacity: 0;
+  pointer-events: none;
 }

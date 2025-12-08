@@ -191,11 +191,20 @@
           родовими сценаріями та КПТ. Продовжую професійний розвиток: курси,
           тренінги, особиста психотерапія й супервізія.
         </p>
-        <div class="bio-diplomas">
-          <img src="images/diploma1.jpg" alt="Диплом 1" />
-          <img src="images/diploma2.jpg" alt="Диплом 1" />
-          <img src="images/diploma3.jpg" alt="Диплом 1" />
+        <div class="diplomas-wrapper">
+          <button class="diploma-arrow left" id="dipLeft"></button>
+
+          <div class="bio-diplomas" id="dipContainer">
+            <img src="images/diploma1.jpg" alt="Диплом" />
+            <img src="images/diploma2.jpg" alt="Диплом" />
+            <img src="images/diploma3.jpg" alt="Диплом" />
+            <img src="images/diploma4.jpg" alt="Диплом" />
+            <img src="images/diploma5.jpg" alt="Диплом" />
+          </div>
+
+          <button class="diploma-arrow right" id="dipRight"></button>
         </div>
+
         <ul class="values-row">
           <li>
             <span class="val-ico"
@@ -440,9 +449,14 @@
               <p>Первинна оцінка та визначення напрямку роботи</p>
             </div>
 
-            <a href="https://t.me/Annapsihol" class="main-btn" target="_blank"
-              >Обрати</a
+            <a
+              href="https://t.me/Annapsihol"
+              class="main-btn modal-open-btn"
+              target="_blank"
+              data-x-close
             >
+              Записатись
+            </a>
           </div>
 
           <div class="price-card popular">
@@ -454,9 +468,14 @@
               <div class="duration">60 хвилин</div>
               <p>Персональна робота з індивідуальними запитами</p>
             </div>
-            <a href="https://t.me/Annapsihol" class="main-btn" target="_blank"
-              >Популярний</a
+            <a
+              href="https://t.me/Annapsihol"
+              class="main-btn modal-open-btn"
+              target="_blank"
+              data-x-close
             >
+              Записатись
+            </a>
           </div>
 
           <div class="price-card">
@@ -467,9 +486,14 @@
               <p>Робота з парами або батьками з дітьми</p>
             </div>
 
-            <a href="https://t.me/Annapsihol" class="main-btn" target="_blank"
-              >Обрати</a
+            <a
+              href="https://t.me/Annapsihol"
+              class="main-btn modal-open-btn"
+              target="_blank"
+              data-x-close
             >
+              Записатись
+            </a>
           </div>
 
           <div class="price-card">
@@ -480,9 +504,14 @@
               <p>Глибока робота з особистістю та експертністю</p>
             </div>
 
-            <a href="https://t.me/Annapsihol" class="main-btn" target="_blank"
-              >Обрати</a
+            <a
+              href="https://t.me/Annapsihol"
+              class="main-btn modal-open-btn"
+              target="_blank"
+              data-x-close
             >
+              Записатись
+            </a>
           </div>
 
           <div class="price-card">
@@ -493,9 +522,14 @@
               <p>Індивідуальна переписка в Вайбер, Телеграм</p>
             </div>
 
-            <a href="https://t.me/Annapsihol" class="main-btn" target="_blank"
-              >Обрати</a
+            <a
+              href="https://t.me/Annapsihol"
+              class="main-btn modal-open-btn"
+              target="_blank"
+              data-x-close
             >
+              Записатись
+            </a>
           </div>
 
           <div class="price-card">
@@ -506,9 +540,14 @@
               <p>Консультації в кабінеті (Дарниця)</p>
             </div>
 
-            <a href="https://t.me/Annapsihol" class="main-btn" target="_blank"
-              >Деталі</a
+            <a
+              href="https://t.me/Annapsihol"
+              class="main-btn modal-open-btn"
+              target="_blank"
+              data-x-close
             >
+              Записатись
+            </a>
           </div>
         </div>
       </div>
@@ -538,7 +577,14 @@
           Це не терапія, а дружня підтримка від фахівця, яка може стати вашим
           щотижневим ресурсом.
         </p>
-        <a href="https://t.me/Annapsihol" class="main-btn">Приєднатись</a>
+        <a
+          href="https://t.me/Annapsihol"
+          class="main-btn modal-open-btn"
+          target="_blank"
+          data-x-close
+        >
+          Записатись
+        </a>
       </div>
     </section>
     <section id="reviews" class="reviews-section reveal">
@@ -552,8 +598,127 @@
           Живі історії клієнтів про турботу, підтримку та трансформації. Ще
           більше відгуків у моєму Instagram.
         </p>
+        <section class="reviews-section">
+          <button class="rev-arrow rev-prev"></button>
 
-        <div class="reviews-grid" role="list">
+          <div class="reviews-wrapper">
+            <div class="reviews-track">
+              <!-- === TEXT REVIEW === -->
+              <div class="review-slide">
+                <figure class="review-card">
+                  <img src="images/r1.jpeg" alt="Відгук" />
+                  <figcaption>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </div>
+                    <blockquote>
+                      Друзі всім рекомендую психолога Анну Юріївну. Моє життя
+                      почало змінюватися після зустрічі з Анною Юріївною.
+                      Питання які заважали мені спокійно жити, після зустрічі з
+                      психологом,легко находили відповіді! Не вагайтеся,скоріше
+                      пишіть Анні Юріївні❤️
+                    </blockquote>
+                    <span class="author">Олена</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <!-- === TEXT REVIEW === -->
+              <div class="review-slide">
+                <figure class="review-card">
+                  <img src="images/r2.jpeg" alt="Відгук" />
+                  <figcaption>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </div>
+                    <blockquote>
+                      Дуже мудро! Я ніколи так не думала, нажаль. Тепер завдяки
+                      вам, я змінила свою думку, і буду робити тільки так, я
+                      буду дбати про себе, щоб потім, коли я буду наповнена, в
+                      мене було чим поділитися з моїм коханим, з дітьми можливо.
+                      В мене буде бажанням, енергія, настрій.
+                    </blockquote>
+                    <span class="author">Олена</span>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="review-slide video-review">
+                <div class="video-wrapper">
+                  <img src="videos/rev1.png" class="video-thumb" />
+
+                  <button class="video-play">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+
+                  <video class="review-video" preload="none">
+                    <source src="videos/reviews1.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+
+              <!-- === TEXT REVIEW === -->
+              <div class="review-slide">
+                <figure class="review-card">
+                  <img src="images/r3.jpeg" alt="Відгук" />
+                  <figcaption>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </div>
+                    <blockquote>
+                      Знову після багатьох років проявила себе пухлина головного
+                      мозку ускладненням у рухах і часовою втратою зору. Трохи
+                      злякана. Не справляюся. Чи можете допомогти як 10 років
+                      назад?
+                    </blockquote>
+                    <span class="author">Алла</span>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="review-slide video-review">
+                <div class="video-wrapper">
+                  <img src="videos/rev2.png" class="video-thumb" />
+
+                  <button class="video-play">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+
+                  <video class="review-video" preload="none">
+                    <source src="videos/reviews2.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+              <div class="review-slide video-review">
+                <div class="video-wrapper">
+                  <img src="videos/rev3.png" class="video-thumb" />
+
+                  <button class="video-play">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+
+                  <video class="review-video" preload="none">
+                    <source src="videos/reviews3.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="rev-arrow rev-next"></button>
+        </section>
+
+        <!-- <div class="reviews-grid" role="list">
           <figure class="review-card" role="listitem">
             <img
               src="images/r1.jpeg"
@@ -625,7 +790,7 @@
               <span class="author">Алла</span>
             </figcaption>
           </figure>
-        </div>
+        </div> -->
 
         <div class="reviews-cta">
           <a
@@ -638,14 +803,76 @@
           </a>
         </div>
       </div>
-      <video
-        class="x1lliihq x5yr21d xh8yej3"
-        playsinline=""
-        preload="none"
-        src="blob:https://www.instagram.com/29247d49-d67b-459b-bd9e-5661510b9131"
-        style="object-fit: cover; display: block"
-      ></video>
     </section>
+
+    <script>
+      const track = document.querySelector(".reviews-track");
+      const slides = Array.from(document.querySelectorAll(".review-slide"));
+      const prev = document.querySelector(".rev-prev");
+      const next = document.querySelector(".rev-next");
+
+      let index = 0;
+
+      // Кількість видимих слайдів
+      function slidesPerView() {
+        return window.innerWidth < 900 ? 1 : 3;
+      }
+
+      // Оновлення позиції
+      function updateSlider() {
+        const spv = slidesPerView();
+        const offset = index * (track.clientWidth / spv);
+        track.style.transform = `translateX(-${offset}px)`;
+      }
+
+      // Безкінечний цикл
+      function nextSlide() {
+        index++;
+        if (index > slides.length - slidesPerView()) index = 0;
+        updateSlider();
+      }
+      function prevSlide() {
+        index--;
+        if (index < 0) index = slides.length - slidesPerView();
+        updateSlider();
+      }
+
+      next.addEventListener("click", nextSlide);
+      prev.addEventListener("click", prevSlide);
+
+      window.addEventListener("resize", updateSlider);
+      updateSlider();
+
+      // PLAY VIDEO
+      document.addEventListener("DOMContentLoaded", () => {
+        const videoBlocks = document.querySelectorAll(".video-wrapper");
+
+        videoBlocks.forEach((block) => {
+          const video = block.querySelector(".review-video");
+          const playBtn = block.querySelector(".video-play");
+          const thumb = block.querySelector(".video-thumb");
+
+          function toggleVideo() {
+            if (video.paused) {
+              video.play();
+              playBtn.classList.add("hidden");
+              thumb.classList.add("hidden"); // ховаємо заставку
+            } else {
+              video.pause();
+              playBtn.classList.remove("hidden");
+              thumb.classList.remove("hidden"); // повертаємо заставку
+            }
+          }
+
+          block.addEventListener("click", toggleVideo);
+
+          playBtn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            toggleVideo();
+          });
+        });
+      });
+    </script>
 
     <section id="contact" class="contact-section reveal">
       <div class="contact-inner">
@@ -1063,6 +1290,67 @@
       openFormBtn.addEventListener("click", () => {
         form.classList.add("active");
       });
+    </script>
+
+    <script>
+      (function () {
+        const container = document.getElementById("dipContainer");
+        const leftBtn = document.getElementById("dipLeft");
+        const rightBtn = document.getElementById("dipRight");
+        const items = Array.from(container.querySelectorAll("img"));
+
+        if (!container || items.length === 0) return;
+
+        function getIndexNearest() {
+          const scrollLeft = container.scrollLeft;
+          let nearest = 0;
+          let minDiff = Infinity;
+          items.forEach((it, idx) => {
+            const diff = Math.abs(it.offsetLeft - scrollLeft);
+            if (diff < minDiff) {
+              minDiff = diff;
+              nearest = idx;
+            }
+          });
+          return nearest;
+        }
+
+        function scrollToIndex(idx) {
+          if (idx < 0) idx = items.length - 1;
+          if (idx >= items.length) idx = 0;
+          const target = items[idx];
+          if (!target) return;
+          container.scrollTo({ left: target.offsetLeft, behavior: "smooth" });
+        }
+
+        rightBtn.addEventListener("click", () => {
+          const cur = getIndexNearest();
+          let next = cur + 1;
+          if (next >= items.length) next = 0; // wrap
+          scrollToIndex(next);
+        });
+
+        leftBtn.addEventListener("click", () => {
+          const cur = getIndexNearest();
+          let prev = cur - 1;
+          if (prev < 0) prev = items.length - 1; // wrap
+          scrollToIndex(prev);
+        });
+
+        let isScrolling;
+        container.addEventListener("scroll", () => {
+          window.clearTimeout(isScrolling);
+          isScrolling = setTimeout(() => {
+            const nearest = getIndexNearest();
+            scrollToIndex(nearest);
+          }, 80);
+        });
+
+        container.addEventListener("keydown", (e) => {
+          if (e.key === "ArrowRight") rightBtn.click();
+          if (e.key === "ArrowLeft") leftBtn.click();
+        });
+      })();
     </script>
   </body>
 </html>
