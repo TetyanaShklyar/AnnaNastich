@@ -1070,9 +1070,16 @@
         id="contact-form"
         class="modal-form"
       >
-        <input type="text" placeholder="Ваше имя" required />
-        <input type="email" placeholder="Email" required />
-        <input type="tel" placeholder="Номер телефона" required />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_subject" value="Новая заявка с сайта" />
+        <input type="text" placeholder="Ваше имя" name="Имя" required />
+        <input type="email" placeholder="Email" name="Email" required />
+        <input
+          type="tel"
+          placeholder="Номер телефона"
+          name="Номер телефона"
+          required
+        />
         <button type="submit" class="modal-submit">Свяжитесь со мной</button>
       </form>
     </div>
